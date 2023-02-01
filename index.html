@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>COYS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!--Шапка-->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <!--обычное меню-->
+            <div class="standart-bar">
+                <ul class="nav navbar-collapse">
+                    <li><a href="/another pages/catalog.html" class="nav-link">Жінкам</a></li>
+                    <li><a href="/another pages/catalog.html" class="nav-link">Чоловікам</a></li>
+                    <li><a href="/another pages/contacts.html" class="nav-link">Контакти</a></li>
+                </ul>
+            </div>
+            <!--бургер меню-->
+            <div class="burger-bar navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Закрыть"></button>
+                        <a href="#" class="navbar-brand d-flex justify-content-center"><img src="/img/logo-brand.svg"
+                                alt=""></a>
+                        <ul class="nav">
+                            <li><img src="/img/search.svg" class="nav-link" alt=""></li>
+                            <li><img src="/img/cart.svg" class="nav-link icon-cart" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="text-center">
+                            <img src="/img/logo-grey.svg" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center p-2">
+                            <a href="#en" class="nav-link lang-en">en</a>
+                            <a href="#ua" class="nav-link lang-ua text-decoration-underline">ua</a>
+                        </div>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 text-center">
+                            <li class="line"></li>
+                            <li><a href="/another pages/catalog.html" class="nav-link p-3 btn-btn1">Жінкам</a></li>
+                            <li class="line"></li>
+                            <li><a href="/another pages/catalog.html" class="nav-link p-3 btn-btn1">Чоловікам</a></li>
+                            <li class="line"></li>
+                            <li><a href="#registration" class="cabinet nav-link p-3 btn-btn1">кабінет</a></li>
+                            <li class="line"></li>
+                            <li><a href="/another pages/contacts.html" class="nav-link p-3 btn-btn1">Контакти</a></li>
+                            <li class="line"></li>
+                            <li><a href="#" class="nav-link p-3 btn-btn1">про бренд</a></li>
+                            <li class="line"></li>
+                            <li><a href="/another pages/uchod.html" class="nav-link p-3 btn-btn1">Догляд</a></li>
+                            <li class="line"></li>
+                        </ul>
+                        <div class="d-flex justify-content-center p-2">
+                            <a href="#" class="nav-link first-li-foot socials " id="first-li-foot"><img
+                                    src="/img/insta.svg" alt=""></a>
+
+                            <a href="#" class="nav-link socials "><img src="/img/facebook.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/index.html" class="navbar-brand d-flex justify-content-center p-1 mx-0"><img
+                    src="/img/logo-brand.svg" alt=""></a>
+            <ul class="nav">
+                <li><a href="#contacts" class="number nav-link">+38 097 192 85 00</a></li>
+                <li><a href="#registration" class="cabinet nav-link">кабінет</a></li>
+                <li><img src="/img/search.svg" class="nav-link" alt=""></li>
+                <li><img src="/img/cart.svg" class="nav-link icon-cart" alt=""></li>
+                <li><a href="#en" class="nav-link lang-en">en</a></li>
+                <li><a href="#ua" class="nav-link lang-ua text-decoration-underline">ua</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--конец шапки-->
+
+    <div class="first-screen position-relative container-fluid">
+        <div class="swiper mySwiper swiper-desktop row">
+            <div class="swiper-wrapper col-12">
+                <div class="swiper-slide">
+                    <div class="cover-1">
+                        <img src="img/cover1_1.png" alt="">
+                        <img src="img/cover1_2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cover-1">
+                        <img src="img/cover2_1.png" alt="">
+                        <img src="img/cover2_2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide cont-cover-1">
+                    <div class="cover-1">
+                        <img src="img/cover3_1.png" alt="">
+                        <img src="img/cover3_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--swiper-mobile-->
+        <div class="swiper swiper-mobile row">
+            <div class="swiper-wrapper col-12">
+                <div class="swiper-slide">
+                    <img src="img/cover1_1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cover1_2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+
+                    <img src="img/cover2_1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cover2_2.png" alt="">
+
+                </div>
+                <div class="swiper-slide cont-cover-1">
+
+                    <img src="img/cover3_1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/cover3_2.png" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="first-text position-absolute">
+            <div class="first-text-cont">
+                <h1 class="text-center">Colors Of Your Soul</h1>
+                <div class="text1-cont p-2 p-md-3 text-center">
+                    <p class="text-1-text" id="text-1-text">Украинский бренд одежды из натуральных тканей с акцентом на
+                        цвет</p>
+                </div>
+                <img src="img/logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="second-screen-catalog container-fluid">
+        <div class="row">
+            <div class="catalog-link position-relative col-sm-6 col-12">
+                <img src="img/catalog-cover1.png" alt="">
+                <a href="/another pages/catalog.html" class="text-catalog-link position-absolute">
+                    <h4 class="p-sm-3 p-2 text-center">Жінкам</h4>
+                </a>
+            </div>
+            <div class="catalog-link position-relative col-sm-6 col-12">
+                <img src="img/catalog-cover2.png" alt="">
+                <a href="/another pages/catalog.html" class="text-catalog-link position-absolute">
+                    <h4 class="p-sm-3 p-2 text-center">Чоловікам</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container third">
+        <h2>Індивідуальні замовлення</h2>
+        <div class="line" id="line1"></div>
+        <div class="third-text row">
+            <div class="third-text-text col-12 col-lg-5 col-xl-7">
+                <img src="img/logo-color.svg" alt="" class="third-img">
+                <h5>Ми приймаємо індивідуальні замовлення при 100% оплаті
+                    Обирайте наші моделі в індивідуальних кольорах і розмірах </h5>
+            </div>
+            <div class="indiv-with-number col-12 col-xl-4 col-lg-4 ">
+                <p class="text-1">Для індувідуального пошиву, залишіть свій номер</p>
+                <div class="input-group">
+                    <input type="text" class="form-control first-form-input" placeholder="+380 _ _  _ _ _  _ _  _ _"
+                        aria-label="number" aria-describedby="button-addon2">
+                    <button class="btn first-form-button" type="button" id="button-addon2">замовити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fourth-screen-offer container-fluid">
+        <div class="row">
+            <div class="offer-link position-relative col-12 col-sm-4">
+                <img src="img/offer-cover1.png" alt="">
+                <a href="#" class="offer-text position-absolute">Новинки</a>
+            </div>
+            <div class="offer-link position-relative col-12 col-sm-4">
+                <img src="img/offer-cover2.png" alt="">
+                <a href="#" class="offer-text position-absolute">Sale</a>
+            </div>
+            <div class="offer-link position-relative col-12 col-sm-4">
+                <img src="img/offer-cover3.png" alt="">
+                <a href="#" class="offer-text position-absolute">Бестселлеры</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Футер-->
+    <footer class="container-fluid">
+        <div class="line" id="line2"></div>
+        <div class="foot-content p-3 row d-flex justify-content-between">
+            <ul class="nav col-xl-5 col-10 col-foot">
+                <li><a href="#" class="nav-link" id=" first-li-foot"><img src="/img/insta.svg" alt=""></a>
+                </li>
+                <li><a href="#" class="nav-link"><img src="/img/facebook.svg" alt=""></a></li>
+                <li><a href="/another pages/uchod.html" class="nav-link">Догляд</a></li>
+                <li><a href="/another pages/about-us.html" class="nav-link">про бренд</a></li>
+                <li><a href="/another pages/lookbooks.html" class="nav-link lookbooks-link">Lookbooks</a></li>
+            </ul>
+            <button onclick="topFunction()" class="topBtn col-1 d-flex justify-content-center align-items-center"
+                title="Go to top"><img src="/img/foot-strelka.svg" alt=""></button>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
