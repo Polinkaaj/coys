@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Догляд</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+
+    <!--Шапка-->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <!--обычное меню-->
+            <div class="standart-bar">
+                <ul class="nav navbar-collapse">
+                    <li><a href="/another pages/catalog.html" class="nav-link">Жінкам</a></li>
+                    <li><a href="/another pages/catalog.html" class="nav-link">Чоловікам</a></li>
+                    <li><a href="/another pages/contacts.html" class="nav-link">Контакти</a></li>
+                </ul>
+            </div>
+            <!--бургер меню-->
+            <div class="burger-bar navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Закрыть"></button>
+                        <a href="#" class="navbar-brand d-flex justify-content-center"><img src="/img/logo-brand.svg"
+                                alt=""></a>
+                        <ul class="nav">
+                            <li><img src="/img/search.svg" class="nav-link" alt=""></li>
+                            <li><img src="/img/cart.svg" class="nav-link icon-cart" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="text-center">
+                            <img src="/img/logo-grey.svg" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center p-2">
+                            <a href="#en" class="nav-link lang-en">en</a>
+                            <a href="#ua" class="nav-link lang-ua text-decoration-underline">ua</a>
+                        </div>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 text-center">
+                            <div class="line"></div>
+                            <li><a href="/another pages/catalog.html" class="nav-link p-3 btn-btn1">Жінкам</a></li>
+                            <div class="line"></div>
+                            <li><a href="/another pages/catalog.html" class="nav-link p-3 btn-btn1">Чоловікам</a></li>
+                            <div class="line"></div>
+                            <li><a href="#registration" class="cabinet nav-link p-3 btn-btn1">кабінет</a></li>
+                            <div class="line"></div>
+                            <li><a href="/another pages/contacts.html" class="nav-link p-3 btn-btn1">Контакти</a></li>
+                            <div class="line"></div>
+                            <li><a href="#" class="nav-link p-3 btn-btn1">про бренд</a></li>
+                            <div class="line"></div>
+                            <li><a href="/another pages/uchod.html" class="nav-link p-3 btn-btn1">Догляд</a></li>
+                            <div class="line"></div>
+                        </ul>
+                        <div class="d-flex justify-content-center p-2">
+                            <a href="#" class="nav-link first-li-foot socials " id="first-li-foot"><img
+                                    src="/img/insta.svg" alt=""></a>
+
+                            <a href="#" class="nav-link socials "><img src="/img/facebook.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/index.html" class="navbar-brand d-flex justify-content-center p-1 mx-0"><img
+                    src="/img/logo-brand.svg" alt=""></a>
+            <ul class="nav">
+                <li><a href="#contacts" class="number nav-link">+38 097 192 85 00</a></li>
+                <li><a href="#registration" class="cabinet nav-link">кабінет</a></li>
+                <li><img src="/img/search.svg" class="nav-link" alt=""></li>
+                <li><img src="/img/cart.svg" class="nav-link icon-cart" alt=""></li>
+                <li><a href="#en" class="nav-link lang-en">en</a></li>
+                <li><a href="#ua" class="nav-link lang-ua text-decoration-underline">ua</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--конец шапки-->
+
+    <!--Кнопка назад-->
+    <div class="container-fluid">
+        <a href="/index.html" class="knopka-nazad">
+            <img src="/img/strelka-nazad.svg" alt="">
+            <p class="btn-btn2 m-0 p-2">назад</p>
+        </a>
+    </div>
+
+    <div class="uchod container">
+        <h2 class="h2-uchod">Догляд</h2>
+        <div class="row uchod-row">
+            <div class="col-lg-3 col-sm-12">
+                <h4 class="h4-uchod">КАК ПРАВИЛЬНО УХАЖИВАТЬ ЗА ОДЕЖДОЙ ИЗ ЛЬНА?</h4>
+                <p class="body-text1">Чтобы надолго продлить срок службы льняной одежды, необходимо запомнить несколько
+                    простых правил по
+                    уходу за ней. Лен считается неприхотливым в быту материалом, поэтому особых сложностей со стиркой и
+                    глажкой ткани у вас не возникнет.</p>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                <!--тут аккордеон-->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>КАК СТИРАТЬ ЛЬНЯНУЮ ОДЕЖДУ</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body body-text1">
+                                <ul class="ul-uchod">
+                                    <li class="list-item p-1">• Рекомендуется ручная стирка или стирка на низких
+                                        оборотах
+                                        стиральной машины.
+                                    </li>
+                                    <li class="list-item p-1">• Белые и натуральные льняные ткани можно стирать при
+                                        температуре до 90°C.</li>
+                                    <li class="list-item p-1">• Лен ярких или темных цветов следует стирать не дольше
+                                        5-10
+                                        минут при температуре
+                                        не
+                                        выше 27°C. Остальные гладкокрашеные ткани стираются при температуре не выше
+                                        40°C.</li>
+                                    <li class="list-item p-1">• При стирке нельзя использовать агрессивные чистящие
+                                        средства и
+                                        хлор.</li>
+                                    <li class="list-item p-1">• Можно использовать кондиционер, который смягчит ткань.
+                                    </li>
+                                    <li class="list-item p-1">• Механическое сжатие при отжиме не рекомендуется, ведь
+                                        лен
+                                        имеет повышенную
+                                        сминаемость.</li>
+                                    <li class="list-item p-1">• Чтобы расцветка не полиняла, при полоскании допускается
+                                        добавить в воду немного
+                                        уксуса.</li>
+                                </ul>
+                                <strong class="btn-btn1">Полезный совет!</strong><br>
+                                Чтобы вещи из льняных белых тканей стирались легче, их надо предварительно намылить и
+                                подержать с час в теплой воде. Далее в воду добавить немного порошка и столовую ложку
+                                уксуса. Затем простирать, хорошо прополоскать в чистой холодной воде и вывесить сушится.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h4>КАК СУШИТЬ ЛЬНЯНУЮ ОДЕЖДУ</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Это тело аккордеона второго элемента.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h4>КАК ГЛАДИТЬ ЛЬНЯНУЮ ОДЕЖДУ</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Это тело аккордеона третьего элемента.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Футер-->
+    <footer class="container-fluid">
+        <div class="line" id="line2"></div>
+        <div class="foot-content p-3 row d-flex justify-content-between">
+            <ul class="nav col-xl-5 col-10 col-foot">
+                <li><a href="#" class="nav-link first-li-foot" id="first-li-foot"><img src="/img/insta.svg" alt=""></a>
+                </li>
+                <li><a href="#" class="nav-link"><img src="/img/facebook.svg" alt=""></a></li>
+                <li><a href="/another pages/uchod.html" class="nav-link">Догляд</a></li>
+                <li><a href="/another pages/about-us.html" class="nav-link">про бренд</a></li>
+                <li><a href="/another pages/lookbooks.html" class="nav-link lookbooks-link">Lookbooks</a></li>
+            </ul>
+            <button onclick="topFunction()" class="topBtn col-1 d-flex justify-content-center align-items-center"
+                title="Go to top"><img src="/img/foot-strelka.svg" alt=""></button>
+        </div>
+    </footer>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

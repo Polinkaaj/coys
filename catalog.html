@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css/" />
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+    <!--Шапка-->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <!--обычное меню-->
+            <div class="standart-bar">
+                <ul class="nav navbar-collapse">
+                    <li><a href="/another pages/catalog.html" class="nav-link">Жінкам</a></li>
+                    <li><a href="/another pages/catalog.html" class="nav-link">Чоловікам</a></li>
+                    <li><a href="/another pages/contacts.html" class="nav-link">Контакти</a></li>
+                </ul>
+            </div>
+            <!--бургер меню-->
+            <div class="burger-bar navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Закрыть"></button>
+                        <a href="#" class="navbar-brand d-flex justify-content-center"><img src="/img/logo-brand.svg"
+                                alt=""></a>
+                        <ul class="nav">
+                            <li><img src="/img/search.svg" class="nav-link" alt=""></li>
+                            <li><img src="/img/cart.svg" class="nav-link icon-cart" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="text-center">
+                            <img src="/img/logo-grey.svg" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center p-2">
+                            <a href="#en" class="nav-link lang-en">en</a>
+                            <a href="#ua" class="nav-link lang-ua text-decoration-underline">ua</a>
+                        </div>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 text-center">
+                            <li class="line"></li>
+                            <li><a href="/another pages/catalog.html" class="nav-link p-3 btn-btn1">Жінкам</a></li>
+                            <li class="line"></li>
+                            <li><a href="/another pages/catalog.html" class="nav-link p-3 btn-btn1">Чоловікам</a></li>
+                            <li class="line"></li>
+                            <li><a href="#registration" class="cabinet nav-link p-3 btn-btn1">кабінет</a></li>
+                            <li class="line"></li>
+                            <li><a href="/another pages/contacts.html" class="nav-link p-3 btn-btn1">Контакти</a></li>
+                            <li class="line"></li>
+                            <li><a href="#" class="nav-link p-3 btn-btn1">про бренд</a></li>
+                            <li class="line"></li>
+                            <li><a href="/another pages/uchod.html" class="nav-link p-3 btn-btn1">Догляд</a></li>
+                            <li class="line"></li>
+                        </ul>
+                        <div class="d-flex justify-content-center p-2">
+                            <a href="#" class="nav-link socials " id="first-li-foot"><img src="/img/insta.svg"
+                                    alt=""></a>
+
+                            <a href="#" class="nav-link socials "><img src="/img/facebook.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/index.html" class="navbar-brand d-flex justify-content-center p-1 mx-0"><img
+                    src="/img/logo-brand.svg" alt=""></a>
+            <ul class="nav">
+                <li><a href="#contacts" class="number nav-link">+38 097 192 85 00</a></li>
+                <li><a href="#registration" class="cabinet nav-link">кабінет</a></li>
+                <li><img src="/img/search.svg" class="nav-link" alt=""></li>
+                <li><img src="/img/cart.svg" class="nav-link icon-cart" alt=""></li>
+                <li><a href="#en" class="nav-link lang-en">en</a></li>
+                <li><a href="#ua" class="nav-link lang-ua text-decoration-underline">ua</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--конец шапки-->
+
+    <div class="container-fluid filters">
+        <div class="my-2 d-flex justify-content-end  btn-group dropstart">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Фільтри
+            </button>
+            <ul class="dropdown-menu">
+                <li class="line"></li>
+                <li><a href="#" class="btn-btn-1 nav-link sale my-1">SALE%</a></li>
+
+                <li class="line"></li>
+                <li><a href="#" class="btn-btn-1 nav-link">New</a></li>
+
+                <li class="line"></li>
+                <li><a href="#" class="btn-btn-1 nav-link">Спеціальні пропозиції</a></li>
+
+                <li class="line"></li>
+                <li><a href="#" class="btn-btn-1 nav-link">bestsellers</a></li>
+
+                <li class="line"></li>
+                <li class="nav-item dropdown text-center"> <a class="nav-link dropdown-toggle" id="p-text1"
+                        data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Весь одяг</a>
+                    <ul class="dropdown-menu position-static text-center">
+                        <li><a class="p-text1 p-2 dropdown-item">Платья</a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">Брюки</a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">Шорты</a></li>
+                        <li>
+                            <a class="p-text1 p-2 dropdown-item">Юбки</a>
+                        </li>
+                        <li>
+                            <a class="p-text1 p-2 dropdown-item">Топы, майки и футболки</a>
+                        </li>
+                        <li><a class="p-text1 p-2 dropdown-item" href="#">Рубашки и блузы</a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">Пиджаки и костюмы</a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">Весь одяг</a></li>
+                    </ul>
+                </li>
+
+                <li class="line"></li>
+
+                <li class="nav-item dropdown text-center"> <a class="nav-link dropdown-toggle" id="p-text1"
+                        data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Колір</a>
+                    <ul class="dropdown-menu position-static ellipses">
+                        <li><a class="p-text1 p-2 dropdown-item">
+                                <div class="ellipse"></div>
+                            </a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">
+                                <div class="ellipse"></div>
+                            </a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">
+                                <div class="ellipse"></div>
+                            </a></li>
+                        <li>
+                            <a class="p-text1 p-2 dropdown-item">
+                                <div class="ellipse"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="p-text1 p-2 dropdown-item">
+                                <div class="ellipse"></div>
+                            </a>
+                        </li>
+                        <li><a class="p-text1 p-2 dropdown-item" href="#">
+                                <div class="ellipse"></div>
+                            </a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">
+                                <div class="ellipse"></div>
+                            </a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">
+                                <div class="ellipse"></div>
+                            </a></li>
+                    </ul>
+                </li>
+
+                <div class="line"></div>
+
+
+                <li class="nav-item dropdown text-center"> <a class="nav-link dropdown-toggle" id="p-text1"
+                        data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Розмір</a>
+                    <ul class="dropdown-menu position-static">
+                        <li class="d-flex justify-content-around">
+                        <li><a class="p-text1 p-2 dropdown-item">S</a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">M</a></li>
+                        <li><a class="p-text1 p-2 dropdown-item">L</a></li>
+                        <li>
+                            <a class="p-text1 p-2 dropdown-item">XL</a>
+                        </li>
+                        <li>
+                            <a class="p-text1 p-2 dropdown-item">2XL</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <div class="line"></div>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-around">
+            <!--menu-->
+            <div class="col-lg-3 text-center menu">
+                <ul class="px-0">
+                    <li class="line"></li>
+                    <li><a href="#" class="btn-btn-1 nav-link sale my-1">SALE%</a></li>
+
+                    <li class="line"></li>
+                    <li><a href="#" class="btn-btn-1 nav-link">New</a></li>
+
+                    <li class="line"></li>
+                    <li><a href="#" class="btn-btn-1 nav-link">Спеціальні пропозиції</a></li>
+
+                    <li class="line"></li>
+                    <li><a href="#" class="btn-btn-1 nav-link">bestsellers</a></li>
+
+                    <li class="line"></li>
+                    <li class="nav-item dropdown text-center"> <a class="nav-link dropdown-toggle" id="p-text1"
+                            data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Весь одяг</a>
+                        <ul class="dropdown-menu position-static text-center">
+                            <li><a class="p-text1 p-2 dropdown-item">Платья</a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">Брюки</a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">Шорты</a></li>
+                            <li>
+                                <a class="p-text1 p-2 dropdown-item">Юбки</a>
+                            </li>
+                            <li>
+                                <a class="p-text1 p-2 dropdown-item">Топы, майки и футболки</a>
+                            </li>
+                            <li><a class="p-text1 p-2 dropdown-item" href="#">Рубашки и блузы</a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">Пиджаки и костюмы</a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">Весь одяг</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="line"></li>
+
+                    <li class="nav-item dropdown text-center"> <a class="nav-link dropdown-toggle" id="p-text1"
+                            data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Колір</a>
+                        <ul class="dropdown-menu position-static ellipses">
+                            <li><a class="p-text1 p-2 dropdown-item">
+                                    <div class="ellipse"></div>
+                                </a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">
+                                    <div class="ellipse"></div>
+                                </a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">
+                                    <div class="ellipse"></div>
+                                </a></li>
+                            <li>
+                                <a class="p-text1 p-2 dropdown-item">
+                                    <div class="ellipse"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="p-text1 p-2 dropdown-item">
+                                    <div class="ellipse"></div>
+                                </a>
+                            </li>
+                            <li><a class="p-text1 p-2 dropdown-item" href="#">
+                                    <div class="ellipse"></div>
+                                </a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">
+                                    <div class="ellipse"></div>
+                                </a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">
+                                    <div class="ellipse"></div>
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <div class="line"></div>
+
+
+                    <li class="nav-item dropdown text-center"> <a class="nav-link dropdown-toggle" id="p-text1"
+                            data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Розмір</a>
+                        <ul class="dropdown-menu position-static">
+                            <li class="d-flex justify-content-around">
+                            <li><a class="p-text1 p-2 dropdown-item">S</a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">M</a></li>
+                            <li><a class="p-text1 p-2 dropdown-item">L</a></li>
+                            <li>
+                                <a class="p-text1 p-2 dropdown-item">XL</a>
+                            </li>
+                            <li>
+                                <a class="p-text1 p-2 dropdown-item">2XL</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <div class="line"></div>
+
+                </ul>
+                <img src="/img/logo-grey.svg" alt="">
+            </div>
+            <!--gallery-->
+            <div class="col-lg-4 col-6 gallery d-flex flex-column ">
+                <div class="gallery__item d-flex flex-column align-items-center">
+                    <img src="/img/catalog-1.png" alt="">
+                    <h5 class="mt-3 text-grey">Платье-рубашка</h5>
+                    <p class="text-decoration-line-through mb-0 text-grey">2 000 грн</p>
+                    <p class="text-red">1 000 грн</p>
+                    <div class="colors d-flex justify-content-around">
+                        <div class="ellipse m-2 color-blue"></div>
+                        <div class="ellipse m-2 color-grey"></div>
+                        <div class="ellipse m-2 color-green"></div>
+                        <div class="ellipse m-2 color-brown"></div>
+                    </div>
+                </div>
+                <div class="gallery__item d-flex flex-column align-items-center">
+                    <img src="/img/catalog-3.png" alt="">
+                    <h5 class="mt-3 text-grey">Платье-рубашка</h5>
+                    <p class="text-decoration-line-through mb-0 text-grey">2 000 грн</p>
+                    <p class="text-red">1 000 грн</p>
+                    <div class="colors d-flex justify-content-around">
+                        <div class="ellipse m-2 color-blue"></div>
+                        <div class="ellipse m-2 color-grey"></div>
+                        <div class="ellipse m-2 color-green"></div>
+                        <div class="ellipse m-2 color-brown"></div>
+                    </div>
+                </div>
+                <div class="gallery__item d-flex flex-column align-items-center">
+                    <img src="/img/catalog-5.png" alt="">
+                    <h5 class="mt-3 text-grey">Платье-рубашка</h5>
+                    <p class="text-decoration-line-through mb-0 text-grey">2 000 грн</p>
+                    <p class="text-red">1 000 грн</p>
+                    <div class="colors d-flex justify-content-around">
+                        <div class="ellipse m-2 color-blue"></div>
+                        <div class="ellipse m-2 color-grey"></div>
+                        <div class="ellipse m-2 color-green"></div>
+                        <div class="ellipse m-2 color-brown"></div>
+                    </div>
+                </div>
+                <div class="gallery__item d-flex flex-column align-items-center">
+                    <img src="/img/catalog-7.png" alt="">
+                    <h5 class="mt-3 text-grey">Платье-рубашка</h5>
+                    <p class="text-decoration-line-through mb-0 text-grey">2 000 грн</p>
+                    <p class="text-red">1 000 грн</p>
+                    <div class="colors d-flex justify-content-around">
+                        <div class="ellipse m-2 color-blue"></div>
+                        <div class="ellipse m-2 color-grey"></div>
+                        <div class="ellipse m-2 color-green"></div>
+                        <div class="ellipse m-2 color-brown"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6 gallery">
+                <div class="gallery__item d-flex flex-column align-items-center">
+                    <img src="/img/catalog-2.png" alt="">
+                    <h5 class="mt-3 text-grey">Платье-рубашка</h5>
+                    <p class="text-decoration-line-through mb-0 text-grey">2 000 грн</p>
+                    <p class="text-red">1 000 грн</p>
+                    <div class="colors d-flex justify-content-around">
+                        <div class="ellipse m-2 color-blue"></div>
+                        <div class="ellipse m-2 color-grey"></div>
+                        <div class="ellipse m-2 color-green"></div>
+                        <div class="ellipse m-2 color-brown"></div>
+                    </div>
+                </div>
+                <div class="gallery__item d-flex flex-column align-items-center">
+                    <img src="/img/catalog-4.png" alt="">
+                    <h5 class="mt-3 text-grey">Платье-рубашка</h5>
+                    <p class="text-decoration-line-through mb-0 text-grey">2 000 грн</p>
+                    <p class="text-red">1 000 грн</p>
+                    <div class="colors d-flex justify-content-around">
+                        <div class="ellipse m-2 color-blue"></div>
+                        <div class="ellipse m-2 color-grey"></div>
+                        <div class="ellipse m-2 color-green"></div>
+                        <div class="ellipse m-2 color-brown"></div>
+                    </div>
+                </div>
+                <div class="gallery__item d-flex flex-column align-items-center">
+                    <img src="/img/catalog-6.png" alt="">
+                    <h5 class="mt-3 text-grey">Платье-рубашка</h5>
+                    <p class="text-decoration-line-through mb-0 text-grey">2 000 грн</p>
+                    <p class="text-red">1 000 грн</p>
+                    <div class="colors d-flex justify-content-around">
+                        <div class="ellipse m-2 color-blue"></div>
+                        <div class="ellipse m-2 color-grey"></div>
+                        <div class="ellipse m-2 color-green"></div>
+                        <div class="ellipse m-2 color-brown"></div>
+                    </div>
+                </div>
+                <div class="gallery__item d-flex flex-column align-items-center">
+                    <img src="/img/catalog-8.png" alt="">
+                    <h5 class="mt-3 text-grey">Платье-рубашка</h5>
+                    <p class="text-decoration-line-through mb-0 text-grey">2 000 грн</p>
+                    <p class="text-red">1 000 грн</p>
+                    <div class="colors d-flex justify-content-around">
+                        <div class="ellipse m-2 color-blue"></div>
+                        <div class="ellipse m-2 color-grey"></div>
+                        <div class="ellipse m-2 color-green"></div>
+                        <div class="ellipse m-2 color-brown"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Футер-->
+    <footer class="container-fluid">
+        <div class="line" id="line2"></div>
+        <div class="foot-content p-3 row d-flex justify-content-between">
+            <ul class="nav col-xl-5 col-10 col-foot">
+                <li><a href="#" class="nav-link" id="first-li-foot"><img src="/img/insta.svg" alt=""></a>
+                </li>
+                <li><a href="#" class="nav-link"><img src="/img/facebook.svg" alt=""></a></li>
+                <li><a href="/another pages/uchod.html" class="nav-link">Догляд</a></li>
+                <li><a href="/another pages/about-us.html" class="nav-link">про бренд</a></li>
+                <li><a href="/another pages/lookbooks.html" class="nav-link lookbooks-link">Lookbooks</a></li>
+            </ul>
+            <button onclick="topFunction()" class="topBtn col-1 d-flex justify-content-center align-items-center"
+                title="Go to top"><img src="/img/foot-strelka.svg" alt=""></button>
+        </div>
+    </footer>
+
+    <script src="/js//bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
